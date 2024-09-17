@@ -1,12 +1,7 @@
 import type { Metadata } from "next";
 import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
-import {
-  Chivo_Mono,
-  EB_Garamond,
-  Dancing_Script,
-  JetBrains_Mono,
-} from "next/font/google";
+import { EB_Garamond, Dancing_Script, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -19,11 +14,6 @@ const EBGaramond = EB_Garamond({
   display: "swap",
 });
 
-// const Mono = Chivo_Mono({
-//   subsets: ["latin"],
-//   variable: "--font-mono",
-//   display: "swap",
-// });
 const Mono = JetBrains_Mono({
   subsets: ["latin"],
   variable: "--font-mono",
